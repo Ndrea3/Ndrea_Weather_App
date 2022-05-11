@@ -20,7 +20,7 @@
           <div class="row">
             <div class="col-9">
               <input
-                type="search"
+                type="Search"
                 placeholder="Enter a City..."
                 autofocus="on"
                 autocomplete="off"
@@ -38,7 +38,36 @@
           </div>
         </form>
       </div>
-      <h1>Quinte West</h1>
+      <h1 id="city-name">Quinte West, ON Canada</h1>
+      <ul>
+        <il id="curDateTime">Wednesday May 11, 2022 @ 19:33</il>
+        <il id="weatherDesc">Partly Cloudy</il>
+      </ul>
+      <div class="row">
+        <div class="col-6">
+          <div class="clearfix">
+            <img
+            src=https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+            alt="Cloudy Icon"class="weather-icon float-left">
+          </div>
+          <div class="float-left">
+            <span class="curTemp" id="temperature">19</span>
+            <span class="tempUnit">
+              <a href="#" id="cel">°C</a>|<a href="#" id="farh">°F</a>
+            </span>
+          </div>
+        </div>
+      </div>
+        <div class="col-6">
+          <ul>
+            <li id="precip">Precipitation: 0%</li>
+            <li id="hum">Humidity: 77%</li>
+            <li id="wind">Wind: 8km/h</li>
+          </ul>
+        </div>
+      </div>
+        </div>
+      </div>
     </div>
     <script src="src/app.js"></script>
   </body>
