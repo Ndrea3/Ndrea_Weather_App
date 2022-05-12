@@ -43,7 +43,7 @@ function convertToCelsius(event) {
 }
 
 // Feature #1
-let dateElement = document.querySelector("#date");
+let dateElement = document.querySelector("#curDateTime");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
@@ -52,8 +52,8 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
 
 // Bonus Feature
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
+let fahrenheitLink = document.querySelector("#fahr");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
-let celsiusLink = document.querySelector("#celsius-link");
+let celsiusLink = document.querySelector("#cel");
 celsiusLink.addEventListener("click", convertToCelsius);
