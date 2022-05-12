@@ -20,7 +20,23 @@ function formatDate(date) {
   ];
   let day = days[dayIndex];
 
-  return `${day} ${hours}:${minutes}`;
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  let month = months[dayIndex.getMonth()];
+  let year = dayIndex.getFullYear();
+  return `${weekDay}, ${month} ${day}, ${year}  ${hours}:${minutes}`;
 }
 
 function search(event) {
